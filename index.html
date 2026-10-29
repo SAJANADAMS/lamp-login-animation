@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lamp Login Animation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="scene" id="scene">
+
+    <div class="lamp">
+      <div class="cord"></div>
+      <div class="lamp-shade"></div>
+      <div class="bulb"></div>
+      <div class="light-beam"></div>
+    </div>
+
+    <div class="switch">
+      <span class="switch-label">PULL TO TURN ON</span>
+      <button id="lampSwitch" aria-label="Toggle lamp">
+        <span class="switch-cord"></span>
+        <span class="switch-knob"></span>
+      </button>
+    </div>
+
+    <section class="login-card" id="loginCard">
+      <div class="brand">
+        <span class="brand-icon">✦</span>
+        <h1>Welcome Back</h1>
+        <p>Sign in to continue your journey.</p>
+      </div>
+
+      <form id="loginForm">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="you@example.com"
+          autocomplete="email"
+          required
+        >
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          autocomplete="current-password"
+          required
+        >
+
+        <div class="form-options">
+          <label class="remember">
+            <input type="checkbox" id="remember">
+            Remember me
+          </label>
+          <a href="#" id="forgotLink">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="login-btn">
+          Sign In <span>→</span>
+        </button>
+
+        <p class="message" id="message" role="status"></p>
+      </form>
+
+      <p class="signup">
+        Don't have an account? <a href="#" id="signupLink">Sign up</a>
+      </p>
+    </section>
+
+    <p class="bottom-text">
+      A LITTLE LIGHT CAN CHANGE EVERYTHING.
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
